@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "qvRTqzmtHSq1V/6DSc5HyqVVd/qg2ZMlcWAvBmthvGGs1C5r0rILob1MdxYWIM8Mm8knAaQloV1niYp3sE5lRw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Query\\Infrastructure\\UserManager.Query.Persistence\\UserManager.Query.Persistence.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\eren_\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\eren_\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

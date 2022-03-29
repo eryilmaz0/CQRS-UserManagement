@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "caBPMcDyW7XwezRzuGvpLWlt2nnDJ0xbSpYAVLfQv5Se3ysGruHgJ9AirTejUTC9Dj+W1/AtmSW3Lin1/XfEIA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Common\\UserManagement.Common\\UserManagement.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\eren_\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\eren_\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

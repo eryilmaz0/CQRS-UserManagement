@@ -1,0 +1,15 @@
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Command\Core\UserManagement.Command.Domain\bin\Debug\net6.0\UserManagement.Command.Domain.deps.json
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Command\Core\UserManagement.Command.Domain\bin\Debug\net6.0\UserManagement.Command.Domain.dll
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Command\Core\UserManagement.Command.Domain\bin\Debug\net6.0\UserManagement.Command.Domain.pdb
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Command\Core\UserManagement.Command.Domain\obj\Debug\net6.0\UserManagement.Command.Domain.csproj.AssemblyReference.cache
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Command\Core\UserManagement.Command.Domain\obj\Debug\net6.0\UserManagement.Command.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Command\Core\UserManagement.Command.Domain\obj\Debug\net6.0\UserManagement.Command.Domain.AssemblyInfoInputs.cache
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Command\Core\UserManagement.Command.Domain\obj\Debug\net6.0\UserManagement.Command.Domain.AssemblyInfo.cs
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Command\Core\UserManagement.Command.Domain\obj\Debug\net6.0\UserManagement.Command.Domain.csproj.CoreCompileInputs.cache
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Command\Core\UserManagement.Command.Domain\obj\Debug\net6.0\UserManagement.Command.Domain.dll
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Command\Core\UserManagement.Command.Domain\obj\Debug\net6.0\refint\UserManagement.Command.Domain.dll
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Command\Core\UserManagement.Command.Domain\obj\Debug\net6.0\UserManagement.Command.Domain.pdb
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Command\Core\UserManagement.Command.Domain\obj\Debug\net6.0\ref\UserManagement.Command.Domain.dll
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Command\Core\UserManagement.Command.Domain\bin\Debug\net6.0\UserManagement.Common.dll
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Command\Core\UserManagement.Command.Domain\bin\Debug\net6.0\UserManagement.Common.pdb
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Command\Core\UserManagement.Command.Domain\obj\Debug\net6.0\UserManagement.Command.Domain.csproj.CopyComplete

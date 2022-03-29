@@ -1,0 +1,17 @@
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Query\Core\UserManager.Query.Application\bin\Debug\net6.0\UserManager.Query.Application.deps.json
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Query\Core\UserManager.Query.Application\bin\Debug\net6.0\UserManager.Query.Application.dll
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Query\Core\UserManager.Query.Application\bin\Debug\net6.0\UserManager.Query.Application.pdb
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Query\Core\UserManager.Query.Application\bin\Debug\net6.0\UserManagement.Query.Domain.dll
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Query\Core\UserManager.Query.Application\bin\Debug\net6.0\UserManagement.Query.Domain.pdb
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Query\Core\UserManager.Query.Application\obj\Debug\net6.0\UserManager.Query.Application.csproj.AssemblyReference.cache
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Query\Core\UserManager.Query.Application\obj\Debug\net6.0\UserManager.Query.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Query\Core\UserManager.Query.Application\obj\Debug\net6.0\UserManager.Query.Application.AssemblyInfoInputs.cache
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Query\Core\UserManager.Query.Application\obj\Debug\net6.0\UserManager.Query.Application.AssemblyInfo.cs
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Query\Core\UserManager.Query.Application\obj\Debug\net6.0\UserManager.Query.Application.csproj.CoreCompileInputs.cache
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Query\Core\UserManager.Query.Application\obj\Debug\net6.0\UserManager.Query.Application.csproj.CopyComplete
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Query\Core\UserManager.Query.Application\obj\Debug\net6.0\UserManager.Query.Application.dll
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Query\Core\UserManager.Query.Application\obj\Debug\net6.0\refint\UserManager.Query.Application.dll
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Query\Core\UserManager.Query.Application\obj\Debug\net6.0\UserManager.Query.Application.pdb
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Query\Core\UserManager.Query.Application\obj\Debug\net6.0\ref\UserManager.Query.Application.dll
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Query\Core\UserManager.Query.Application\bin\Debug\net6.0\UserManagement.Common.dll
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Query\Core\UserManager.Query.Application\bin\Debug\net6.0\UserManagement.Common.pdb

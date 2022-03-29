@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "diUFPIYBbw5YE2XcNCh+zQvl1J89bIjEm507tFzI2BA=",
+  "Source": "UserManagement.Command.API",
+  "BasePath": "_content/UserManagement.Command.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

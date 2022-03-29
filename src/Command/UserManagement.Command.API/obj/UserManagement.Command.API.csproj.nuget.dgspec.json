@@ -1,0 +1,494 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\UserManagement.Command.API\\UserManagement.Command.API.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\Core\\UserManagement.Command.Application\\UserManagement.Command.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\Core\\UserManagement.Command.Application\\UserManagement.Command.Application.csproj",
+        "projectName": "UserManagement.Command.Application",
+        "projectPath": "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\Core\\UserManagement.Command.Application\\UserManagement.Command.Application.csproj",
+        "packagesPath": "C:\\Users\\eren_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\Core\\UserManagement.Command.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\eren_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\Core\\UserManagement.Command.Domain\\UserManagement.Command.Domain.csproj": {
+                "projectPath": "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\Core\\UserManagement.Command.Domain\\UserManagement.Command.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\Core\\UserManagement.Command.Domain\\UserManagement.Command.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\Core\\UserManagement.Command.Domain\\UserManagement.Command.Domain.csproj",
+        "projectName": "UserManagement.Command.Domain",
+        "projectPath": "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\Core\\UserManagement.Command.Domain\\UserManagement.Command.Domain.csproj",
+        "packagesPath": "C:\\Users\\eren_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\Core\\UserManagement.Command.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\eren_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Common\\UserManagement.Common\\UserManagement.Common.csproj": {
+                "projectPath": "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Common\\UserManagement.Common\\UserManagement.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\Infrastructure\\UserManagement.Command.Infrastructure\\UserManagement.Command.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\Infrastructure\\UserManagement.Command.Infrastructure\\UserManagement.Command.Infrastructure.csproj",
+        "projectName": "UserManagement.Command.Infrastructure",
+        "projectPath": "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\Infrastructure\\UserManagement.Command.Infrastructure\\UserManagement.Command.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\eren_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\Infrastructure\\UserManagement.Command.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\eren_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\Core\\UserManagement.Command.Application\\UserManagement.Command.Application.csproj": {
+                "projectPath": "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\Core\\UserManagement.Command.Application\\UserManagement.Command.Application.csproj"
+              },
+              "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\Infrastructure\\UserManagement.Command.Persistence\\UserManagement.Command.Persistence.csproj": {
+                "projectPath": "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\Infrastructure\\UserManagement.Command.Persistence\\UserManagement.Command.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "MassTransit.AspNetCore": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.5.43, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\Infrastructure\\UserManagement.Command.Persistence\\UserManagement.Command.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\Infrastructure\\UserManagement.Command.Persistence\\UserManagement.Command.Persistence.csproj",
+        "projectName": "UserManagement.Command.Persistence",
+        "projectPath": "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\Infrastructure\\UserManagement.Command.Persistence\\UserManagement.Command.Persistence.csproj",
+        "packagesPath": "C:\\Users\\eren_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\Infrastructure\\UserManagement.Command.Persistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\eren_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\Core\\UserManagement.Command.Application\\UserManagement.Command.Application.csproj": {
+                "projectPath": "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\Core\\UserManagement.Command.Application\\UserManagement.Command.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\UserManagement.Command.API\\UserManagement.Command.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\UserManagement.Command.API\\UserManagement.Command.API.csproj",
+        "projectName": "UserManagement.Command.API",
+        "projectPath": "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\UserManagement.Command.API\\UserManagement.Command.API.csproj",
+        "packagesPath": "C:\\Users\\eren_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\UserManagement.Command.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\eren_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\Core\\UserManagement.Command.Application\\UserManagement.Command.Application.csproj": {
+                "projectPath": "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\Core\\UserManagement.Command.Application\\UserManagement.Command.Application.csproj"
+              },
+              "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\Infrastructure\\UserManagement.Command.Infrastructure\\UserManagement.Command.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\Infrastructure\\UserManagement.Command.Infrastructure\\UserManagement.Command.Infrastructure.csproj"
+              },
+              "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\Infrastructure\\UserManagement.Command.Persistence\\UserManagement.Command.Persistence.csproj": {
+                "projectPath": "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\Infrastructure\\UserManagement.Command.Persistence\\UserManagement.Command.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[10.4.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Common\\UserManagement.Common\\UserManagement.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Common\\UserManagement.Common\\UserManagement.Common.csproj",
+        "projectName": "UserManagement.Common",
+        "projectPath": "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Common\\UserManagement.Common\\UserManagement.Common.csproj",
+        "packagesPath": "C:\\Users\\eren_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Common\\UserManagement.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\eren_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

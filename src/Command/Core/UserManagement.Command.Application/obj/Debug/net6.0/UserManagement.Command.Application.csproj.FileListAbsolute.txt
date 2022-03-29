@@ -1,0 +1,17 @@
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Command\Core\UserManagement.Command.Application\bin\Debug\net6.0\UserManagement.Command.Application.deps.json
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Command\Core\UserManagement.Command.Application\bin\Debug\net6.0\UserManagement.Command.Application.dll
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Command\Core\UserManagement.Command.Application\bin\Debug\net6.0\UserManagement.Command.Application.pdb
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Command\Core\UserManagement.Command.Application\bin\Debug\net6.0\UserManagement.Command.Domain.dll
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Command\Core\UserManagement.Command.Application\bin\Debug\net6.0\UserManagement.Command.Domain.pdb
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Command\Core\UserManagement.Command.Application\obj\Debug\net6.0\UserManagement.Command.Application.csproj.AssemblyReference.cache
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Command\Core\UserManagement.Command.Application\obj\Debug\net6.0\UserManagement.Command.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Command\Core\UserManagement.Command.Application\obj\Debug\net6.0\UserManagement.Command.Application.AssemblyInfoInputs.cache
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Command\Core\UserManagement.Command.Application\obj\Debug\net6.0\UserManagement.Command.Application.AssemblyInfo.cs
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Command\Core\UserManagement.Command.Application\obj\Debug\net6.0\UserManagement.Command.Application.csproj.CoreCompileInputs.cache
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Command\Core\UserManagement.Command.Application\obj\Debug\net6.0\UserManagement.Command.Application.csproj.CopyComplete
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Command\Core\UserManagement.Command.Application\obj\Debug\net6.0\UserManagement.Command.Application.dll
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Command\Core\UserManagement.Command.Application\obj\Debug\net6.0\refint\UserManagement.Command.Application.dll
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Command\Core\UserManagement.Command.Application\obj\Debug\net6.0\UserManagement.Command.Application.pdb
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Command\Core\UserManagement.Command.Application\obj\Debug\net6.0\ref\UserManagement.Command.Application.dll
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Command\Core\UserManagement.Command.Application\bin\Debug\net6.0\UserManagement.Common.dll
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Command\Core\UserManagement.Command.Application\bin\Debug\net6.0\UserManagement.Common.pdb

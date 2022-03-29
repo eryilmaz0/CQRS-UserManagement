@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "V8JztBPGcP8gwplLlgvmiSzBhep2ioP5BSwpajn2JN0sUIQdoDMDmY88dYDjdJQGBb+MMWAJUIkBnSoFT0cTwg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Query\\Core\\UserManager.Query.Application\\UserManager.Query.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\eren_\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\eren_\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

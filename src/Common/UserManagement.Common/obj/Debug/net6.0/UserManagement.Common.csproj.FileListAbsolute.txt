@@ -1,0 +1,12 @@
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Common\UserManagement.Common\bin\Debug\net6.0\UserManagement.Common.deps.json
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Common\UserManagement.Common\bin\Debug\net6.0\UserManagement.Common.dll
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Common\UserManagement.Common\bin\Debug\net6.0\UserManagement.Common.pdb
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Common\UserManagement.Common\obj\Debug\net6.0\UserManagement.Common.csproj.AssemblyReference.cache
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Common\UserManagement.Common\obj\Debug\net6.0\UserManagement.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Common\UserManagement.Common\obj\Debug\net6.0\UserManagement.Common.AssemblyInfoInputs.cache
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Common\UserManagement.Common\obj\Debug\net6.0\UserManagement.Common.AssemblyInfo.cs
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Common\UserManagement.Common\obj\Debug\net6.0\UserManagement.Common.csproj.CoreCompileInputs.cache
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Common\UserManagement.Common\obj\Debug\net6.0\UserManagement.Common.dll
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Common\UserManagement.Common\obj\Debug\net6.0\refint\UserManagement.Common.dll
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Common\UserManagement.Common\obj\Debug\net6.0\UserManagement.Common.pdb
+C:\Users\eren_\Desktop\PROJELER\CQRSUserManagement\src\Common\UserManagement.Common\obj\Debug\net6.0\ref\UserManagement.Common.dll

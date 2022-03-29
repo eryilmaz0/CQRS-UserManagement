@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "yL9Z/OxA7gEK0hSnXw3e19lHdkBN4iMQYInJEiI+3L8=",
+  "Source": "UserManagement.Query.API",
+  "BasePath": "_content/UserManagement.Query.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
