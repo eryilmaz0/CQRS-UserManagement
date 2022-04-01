@@ -30,11 +30,6 @@ public class UserRoleService : IUserRoleService
     
     public async Task<AssignRoleToUserResponse> Handle(AssignRoleToUserCommand request, CancellationToken cancellationToken)
     {
-        bool acquireLockResult = await _lockManager.AcquireLockAsync($"user_{request.UserId.ToString()}");
-        
-        if(!acquireLockResult)
-            return new(){IsSuccess = false, ResultMessage = "Another transaction is running that processing this user."};
-        
         var user = await _userRepository.GetUserWithRolesAsync(request.UserId);
 
         if (user is null)
@@ -76,11 +71,6 @@ public class UserRoleService : IUserRoleService
     
     public async Task<RemoveUserRoleResponse> Handle(RemoveUserRoleCommand request, CancellationToken cancellationToken)
     {
-        bool acquireLockResult = await _lockManager.AcquireLockAsync($"userrole_{request.UserRoleId.ToString()}");
-        
-        if(!acquireLockResult)
-            return new(){IsSuccess = false, ResultMessage = "Another transaction is running that processing this user role."};
-
         var userRole = await _userRoleRepository.FindAsync(role => role.Id.Equals(request.UserRoleId));
 
         if (userRole is null)
@@ -100,11 +90,6 @@ public class UserRoleService : IUserRoleService
     
     public async Task<UpdateUserRoleResponse> Handle(UpdateUserRoleCommand request, CancellationToken cancellationToken)
     {
-        bool acquireLockResult = await _lockManager.AcquireLockAsync($"userrole_{request.UserRoleId.ToString()}");
-        
-        if(!acquireLockResult)
-            return new(){IsSuccess = false, ResultMessage = "Another transaction is running that processing this user role."};
-
         var userRole = await _userRoleRepository.FindAsync(role => role.Id.Equals(request.UserRoleId));
 
         if (userRole is null)

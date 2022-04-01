@@ -32,7 +32,8 @@ public class UsersController : Controller
     [HttpPut]
     public async Task<IActionResult> UpdateUser([FromBody] UpdateUserCommand request)
     {
-        var result = await _mediator.SendAsync<UpdateUserCommand, UpdateUserResponse>(request);
+        string lockObjectKey = $"user_{request.UserId.ToString()}";
+        var result = await _mediator.SendAsync<UpdateUserCommand, UpdateUserResponse>(request, lockObjectKey);
         
         if (!result.IsSuccess)
             return BadRequest(result);
@@ -45,8 +46,9 @@ public class UsersController : Controller
     [Route("{userId}")]
     public async Task<IActionResult> RemoveUser([FromRoute] Guid userId)
     {
+        string lockObjectKey = $"user_{userId.ToString()}";
         var result = 
-            await _mediator.SendAsync<RemoveUserCommand, RemoveUserResponse>(new() { UserId = userId });
+            await _mediator.SendAsync<RemoveUserCommand, RemoveUserResponse>(new() { UserId = userId } , lockObjectKey );
         
         if (!result.IsSuccess)
             return BadRequest(result);
@@ -59,7 +61,8 @@ public class UsersController : Controller
     [Route("ConfirmUser")]
     public async Task<IActionResult> ConfirmUser([FromBody] ConfirmUserCommand request)
     {
-        var result = await _mediator.SendAsync<ConfirmUserCommand, ConfirmUserResponse>(request);
+        string lockObjectKey = $"user_{request.UserId.ToString()}";
+        var result = await _mediator.SendAsync<ConfirmUserCommand, ConfirmUserResponse>(request, lockObjectKey);
         
         if (!result.IsSuccess)
             return BadRequest(result);

@@ -52,11 +52,6 @@ public class UserService : IUserService
     
     public async Task<ConfirmUserResponse> Handle(ConfirmUserCommand request, CancellationToken cancellationToken)
     {
-        bool acquireLockResult = await _lockManager.AcquireLockAsync($"user_{request.UserId.ToString()}");
-        
-        if(!acquireLockResult)
-            return new(){IsSuccess = false, ResultMessage = "Another transaction is running that processing this user."};
-        
         var user = await _userRepository.FindAsync(user => user.Id.Equals(request.UserId));
 
         if (user is null)
@@ -80,11 +75,6 @@ public class UserService : IUserService
 
     public async Task<UpdateUserResponse> Handle(UpdateUserCommand request, CancellationToken cancellationToken)
     {
-        bool acquireLockResult = await _lockManager.AcquireLockAsync($"user_{request.UserId.ToString()}");
-        
-        if(!acquireLockResult)
-            return new(){IsSuccess = false, ResultMessage = "Another transaction is running that processing this user."};
-        
         var user = await _userRepository.FindAsync(user => user.Id.Equals(request.UserId));
 
         if (user is null)
@@ -109,11 +99,6 @@ public class UserService : IUserService
     
     public async Task<RemoveUserResponse> Handle(RemoveUserCommand request, CancellationToken cancellationToken)
     {
-        bool acquireLockResult = await _lockManager.AcquireLockAsync($"user_{request.UserId.ToString()}");
-        
-        if(!acquireLockResult)
-            return new(){IsSuccess = false, ResultMessage = "Another transaction is running that processing this user."};
-        
         var user = await _userRepository.FindAsync(user => user.Id.Equals(request.UserId));
 
         if (user is null)
@@ -124,9 +109,6 @@ public class UserService : IUserService
         if (!result)
             return new() { IsSuccess = true, ResultMessage = "User Not Deleted" };
 
-        
-        await _lockManager.ReleaseLockAsync($"user_{request.UserId.ToString()}");
-        
         _eventPublisher.RegisterEvent(new UserRemovedEvent() { RemovedUserId = request.UserId.ToString() });
         return new() { IsSuccess = true, ResultMessage = "User Deleted Successfully." };
     }

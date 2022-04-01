@@ -32,7 +32,8 @@ public class UserRolesController : Controller
    [HttpPut]
    public async Task<IActionResult> UpdateUserRole([FromBody] UpdateUserRoleCommand request)
    {
-      var result = await _mediator.SendAsync<UpdateUserRoleCommand, UpdateUserRoleResponse>(request);
+      string lockObjectKey = $"userrole_{request.UserRoleId.ToString()}";
+      var result = await _mediator.SendAsync<UpdateUserRoleCommand, UpdateUserRoleResponse>(request, lockObjectKey);
       
       if (!result.IsSuccess)
          return BadRequest(result);
@@ -45,8 +46,9 @@ public class UserRolesController : Controller
    [Route("{userRoleId:guid}")]
    public async Task<IActionResult> RemoveUserRole(Guid userRoleId)
    {
+      string lockObjectKey = $"userrole_{userRoleId.ToString()}";
       var result =
-         await _mediator.SendAsync<RemoveUserRoleCommand, RemoveUserRoleResponse>(new() { UserRoleId = userRoleId });
+         await _mediator.SendAsync<RemoveUserRoleCommand, RemoveUserRoleResponse>(new() { UserRoleId = userRoleId }, lockObjectKey);
       
       if (!result.IsSuccess)
          return BadRequest(result);
@@ -59,7 +61,8 @@ public class UserRolesController : Controller
    [Route("AssignRole")]
    public async Task<IActionResult> AssignRole([FromBody] AssignRoleToUserCommand request)
    {
-      var result = await _mediator.SendAsync<AssignRoleToUserCommand, AssignRoleToUserResponse>(request);
+      string lockObjectKey = $"user_{request.UserId.ToString()}";
+      var result = await _mediator.SendAsync<AssignRoleToUserCommand, AssignRoleToUserResponse>(request, lockObjectKey);
       
       if (!result.IsSuccess)
          return BadRequest(result);
