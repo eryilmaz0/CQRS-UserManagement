@@ -11,8 +11,7 @@ public class AutoMapperManager : IMapperManager
     {
         _mapper = mapper;
     }
-
-    //Will Use AutoMapper   
+    
     public TMappedData Map<TData, TMappedData>(TData data)
     {
         return _mapper.Map<TMappedData>(data);

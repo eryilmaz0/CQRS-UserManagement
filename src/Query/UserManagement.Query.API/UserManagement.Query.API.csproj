@@ -12,10 +12,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Controllers" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\Core\UserManager.Query.Application\UserManager.Query.Application.csproj" />
       <ProjectReference Include="..\Infrastructure\UserManager.Query.Infrastructure\UserManager.Query.Infrastructure.csproj" />
       <ProjectReference Include="..\Infrastructure\UserManager.Query.Persistence\UserManager.Query.Persistence.csproj" />

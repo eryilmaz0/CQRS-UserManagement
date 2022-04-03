@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "H89AOSmSI52L9bJxfCOViABGvQjqfrU5qkpyA7I4XATZ7z2Z0DhTvklW+9OrNCrfKRY8wCx0vBJwdYGZu6L0FQ==",
+  "dgSpecHash": "kxqRDKwSu5R0R8/brqMlv4XvzI+mrZYD2KWCB2ChPD6upieohBqbScXI+rZaEvukU7+VqK57h8gQCvy9E/A7+A==",
   "success": true,
   "projectFilePath": "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\Infrastructure\\UserManagement.Command.Persistence\\UserManagement.Command.Persistence.csproj",
   "expectedPackageFiles": [

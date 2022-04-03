@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vVJ/kjg6pNA5tLUg+uA89SkYSh0by6pQqyJjL1xLVVxlNYet40mLLhDB+FDQFQ33Cn8Ixz6EdeNu4LLEWHF7wg==",
+  "dgSpecHash": "2DzHQs4tXkbWPfXcnV76HLAo22B9cstd84QkUAwOsKnmICCXD2JFs3JT2WRtQwI1JZW3+P/O6gJYrWv96DQPKQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\eren_\\Desktop\\PROJELER\\CQRSUserManagement\\src\\Command\\Core\\UserManagement.Command.Application\\UserManagement.Command.Application.csproj",
   "expectedPackageFiles": [
