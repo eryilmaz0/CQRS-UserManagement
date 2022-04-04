@@ -3,8 +3,7 @@ using UserManagement.Common.IntegrationEvent;
 
 namespace MassTransitTest;
 
-public class TestConsumer : IConsumer<UserCreatedEvent>, 
-                            IConsumer<AssignedDefaultRoleEvent>,
+public class TestConsumer : IConsumer<UserCreatedEvent>,
                             IConsumer<AddressUpdatedEvent>,
                             IConsumer<RoleAssignedUserEvent>,
                             IConsumer<UserConfirmedEvent>,
@@ -20,11 +19,7 @@ public class TestConsumer : IConsumer<UserCreatedEvent>,
         return Task.CompletedTask;
     }
 
-    public Task Consume(ConsumeContext<AssignedDefaultRoleEvent> context)
-    {
-        throw new NotImplementedException();
-    }
-
+    
     public Task Consume(ConsumeContext<AddressUpdatedEvent> context)
     {
         throw new NotImplementedException();

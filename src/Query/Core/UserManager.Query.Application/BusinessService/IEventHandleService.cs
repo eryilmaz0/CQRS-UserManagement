@@ -5,7 +5,6 @@ namespace UserManager.Query.Application.BusinessService;
 public interface IEventHandleService
 {
     public Task HandleAddressUpdatedEventAsync(AddressUpdatedEvent @event);
-    public Task HandleAssignedDefaultRoleEventAsync(AssignedDefaultRoleEvent @event);
     public Task HandleRoleAssignedUserEventAsync(RoleAssignedUserEvent @event);
     public Task HandleUserConfirmedEventAsync(UserConfirmedEvent @event);
     public Task HandleUserCreatedEventAsync(UserCreatedEvent @event);

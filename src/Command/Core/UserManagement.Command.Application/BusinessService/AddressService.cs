@@ -33,7 +33,7 @@ public class AddressService : IAddressService
         if (!result)
             return new() { IsSuccess = false, ResultMessage = "Address Not Updated" };
 
-        _eventPublisher.RegisterEvent(new AddressUpdatedEvent(address.Id.ToString(), address.City, address.Country, address.FullAddress));
+        _eventPublisher.RegisterEvent(new AddressUpdatedEvent(address.UserId.ToString(), address.City, address.Country, address.FullAddress));
         return new() { IsSuccess = true, ResultMessage = "Address Updated Successfully." };
     }
 }

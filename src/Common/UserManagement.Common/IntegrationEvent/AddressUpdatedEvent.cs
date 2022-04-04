@@ -2,14 +2,14 @@
 
 public class AddressUpdatedEvent : IIntegrationEvent
 {
-    public string AddressId { get; set; }
+    public string UserId { get; set; }
     public string City { get; set; }
     public string Country { get; set; }
     public string FullAddress { get; set; }
 
-    public AddressUpdatedEvent(string addressId, string city, string country, string fullAddress)
+    public AddressUpdatedEvent(string userId, string city, string country, string fullAddress)
     {
-        this.AddressId = addressId;
+        this.UserId = userId;
         this.City = city;
         this.Country = country;
         this.FullAddress = fullAddress;

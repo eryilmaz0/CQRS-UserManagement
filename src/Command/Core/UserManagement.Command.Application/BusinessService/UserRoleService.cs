@@ -64,7 +64,7 @@ public class UserRoleService : IUserRoleService
         if (!result)
             return new() { IsSuccess = false, ResultMessage = "UserRole Not Inserted" };
 
-        _eventPublisher.RegisterEvent(new UserRoleCreatedEvent(newUserRole.Id.ToString(), newUserRole.RoleName, newUserRole.RoleDescription, newUserRole.IsDefault));
+        _eventPublisher.RegisterEvent(new UserRoleCreatedEvent(newUserRole.Id.ToString(), newUserRole.RoleName, newUserRole.RoleDescription, newUserRole.IsDefault, newUserRole.Created));
         return new() { IsSuccess = true, ResultMessage = "User Role Inserted" };
     }
 

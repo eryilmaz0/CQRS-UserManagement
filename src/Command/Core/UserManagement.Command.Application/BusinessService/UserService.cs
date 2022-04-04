@@ -44,8 +44,6 @@ public class UserService : IUserService
         _eventPublisher.RegisterEvent(new UserCreatedEvent(user.Id.ToString(), user.Name, user.LastName, user.Age, 
                                                             (int)user.Gender, user.Email, user.EmailConfirmed, user.Created));
 
-        _eventPublisher.RegisterEvent(new AssignedDefaultRoleEvent(user.Id.ToString(), defaultRole.Id.ToString()));
-        
         return new() { IsSuccess = true, ResultMessage = "User Created", CreatedUserId = user.Id };
     }
 

@@ -5,7 +5,6 @@ using UserManager.Query.Application.BusinessService;
 namespace UserManager.Query.Infrastructure.EventHandling.MassTransit;
 
 public class EventConsumerObject : IConsumer<AddressUpdatedEvent>,
-                                   IConsumer<AssignedDefaultRoleEvent>,
                                    IConsumer<RoleAssignedUserEvent>,
                                    IConsumer<UserConfirmedEvent>,
                                    IConsumer<UserCreatedEvent>,
@@ -28,12 +27,7 @@ public class EventConsumerObject : IConsumer<AddressUpdatedEvent>,
     {
         await this._eventHandler.HandleAddressUpdatedEventAsync(context.Message);
     }
-
-    public async Task Consume(ConsumeContext<AssignedDefaultRoleEvent> context)
-    {
-        await this._eventHandler.HandleAssignedDefaultRoleEventAsync(context.Message);
-    }
-
+    
     public async Task Consume(ConsumeContext<RoleAssignedUserEvent> context)
     {
         await this._eventHandler.HandleRoleAssignedUserEventAsync(context.Message);
