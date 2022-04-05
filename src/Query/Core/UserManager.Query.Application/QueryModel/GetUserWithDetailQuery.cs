@@ -4,5 +4,5 @@ namespace UserManager.Query.Application.QueryModel;
 
 public class GetUserWithDetailQuery : Query<GetUserWithDetailQueryResponse>
 {
-    public string UserId { get; set; }
+    public Guid UserId { get; set; }
 }

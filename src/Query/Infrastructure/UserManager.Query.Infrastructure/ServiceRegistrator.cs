@@ -30,7 +30,7 @@ public static class ServiceRegistrator
         
         serviceCollection.AddSingleton<IMediatorManager, MediatrManager>();
         serviceCollection.AddSingleton<IMapperManager, AutoMapperManager>();
-        serviceCollection.AddSingleton<IQueryCacheManager, RedisQueryCache>();
+        serviceCollection.AddSingleton<IQueryCacheManager, QueryCacheManager.QueryCacheManager>();
 
         List<Assembly> assemblies = new()
         {

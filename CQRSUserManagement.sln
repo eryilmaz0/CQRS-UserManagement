@@ -38,8 +38,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManager.Query.Infrastru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManager.Query.Persistence", "src\Query\Infrastructure\UserManager.Query.Persistence\UserManager.Query.Persistence.csproj", "{66E3ADCA-925C-4A39-9E62-8E3FBB9D2C62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransitTest", "src\Command\Infrastructure\MassTransitTest\MassTransitTest.csproj", "{5B9FAFB0-D806-4EDE-A1D1-289DC440CD78}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -64,7 +62,6 @@ Global
 		{F418AE16-51DE-4146-B830-290395CC0753} = {E6B3ADCF-F0D6-417D-8793-C99C00C117BA}
 		{5E744C07-BC76-450B-BE11-8345DE821880} = {A45D037B-15BE-47B1-A18A-C551A7C9C492}
 		{66E3ADCA-925C-4A39-9E62-8E3FBB9D2C62} = {A45D037B-15BE-47B1-A18A-C551A7C9C492}
-		{5B9FAFB0-D806-4EDE-A1D1-289DC440CD78} = {FF00BFF0-8F5C-488C-84F9-DE4E63E14C5A}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{ED8CE186-6443-4432-A9CE-EA8364970DB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -111,9 +108,5 @@ Global
 		{66E3ADCA-925C-4A39-9E62-8E3FBB9D2C62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66E3ADCA-925C-4A39-9E62-8E3FBB9D2C62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66E3ADCA-925C-4A39-9E62-8E3FBB9D2C62}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5B9FAFB0-D806-4EDE-A1D1-289DC440CD78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5B9FAFB0-D806-4EDE-A1D1-289DC440CD78}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5B9FAFB0-D806-4EDE-A1D1-289DC440CD78}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5B9FAFB0-D806-4EDE-A1D1-289DC440CD78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
