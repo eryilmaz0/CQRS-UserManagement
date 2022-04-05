@@ -10,6 +10,5 @@ public class UpdateUserRoleCommandValidator : AbstractValidator<UpdateUserRoleCo
         RuleFor(property => property.UserRoleId).NotEmpty().WithMessage("UserRoleId Can Not be Null or Empty.");
         RuleFor(property => property.UserRoleName).NotEmpty().WithMessage("UserRoleName Can Not be Null or Empty.");
         RuleFor(property => property.UserRoleDescription).NotEmpty().WithMessage("UserRoleDescription Can Not be Null or Empty.");
-        RuleFor(property => property.IsDefault).NotEmpty().WithMessage("IsDefault Can Not be Null or Empty.");
     }
 }

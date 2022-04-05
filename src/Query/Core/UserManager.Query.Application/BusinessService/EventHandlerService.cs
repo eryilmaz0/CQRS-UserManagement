@@ -9,8 +9,15 @@ public class EventHandlerService : IEventHandleService
 {
     private readonly IUserRepository _userRepository;
     private readonly IUserRoleRepository _userRoleRepository;
+
+
+    public EventHandlerService(IUserRepository userRepository, IUserRoleRepository userRoleRepository)
+    {
+        _userRepository = userRepository;
+        _userRoleRepository = userRoleRepository;
+    }
     
-    
+
     public async Task HandleAddressUpdatedEventAsync(AddressUpdatedEvent @event)
     {
         var user = await _userRepository.FindAsync(user => user.Id.Equals(@event.UserId));
@@ -39,7 +46,7 @@ public class EventHandlerService : IEventHandleService
         if (role is null)
             throw new ApplicationException("Role Not Found.");
         
-        if(user.UserRoles.Any(roleId => roleId.Equals(@event.RoleId)))
+        if(user.RoleIds.Any(roleId => roleId.Equals(@event.RoleId)))
             throw new ApplicationException("User Has Permission Already.");
         
         user.RoleIds.Add(@event.RoleId);
@@ -75,8 +82,11 @@ public class EventHandlerService : IEventHandleService
             Gender = (Gender)@event.Gender,
             Email = @event.Email,
             EmailConfirmed = @event.EmailConfirmed,
-            Created = @event.Created
+            Created = DateTime.Now
         };
+
+        var defaultRole = await _userRoleRepository.FindAsync(x => x.IsDefault);
+        user.RoleIds.Add(defaultRole.Id);
 
         await _userRepository.Insert(user);
     }
@@ -106,7 +116,7 @@ public class EventHandlerService : IEventHandleService
             RoleName = @event.RoleName,
             RoleDescription = @event.RoleDescription,
             IsDefault = @event.IsDefault,
-            Created = @event.Created
+            Created = DateTime.Now
         };
 
         await _userRoleRepository.Insert(role);
@@ -128,8 +138,8 @@ public class EventHandlerService : IEventHandleService
     {
         var role = await _userRoleRepository.FindAsync(role => role.Id.Equals(@event.UserRoleId));
 
-        if (role is not null)
-            throw new ApplicationException("User Not Found.");
+        if (role is null)
+            throw new ApplicationException("Role Not Found.");
 
         role.RoleName = @event.UserRoleName;
         role.RoleDescription = @event.UserRoleDescription;
@@ -150,6 +160,8 @@ public class EventHandlerService : IEventHandleService
         user.LastName = @event.LastName;
         user.Gender = (Gender)@event.Gender;
         user.Age = @event.Age;
+
+        await _userRepository.Update(user);
     }
     
 }

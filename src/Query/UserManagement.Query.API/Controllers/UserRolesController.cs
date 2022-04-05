@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using UserManagement.Common.Mediator;
+using UserManagement.Query.Domain.Entity;
 using UserManager.Query.Application.QueryModel;
 using UserManager.Query.Application.QueryResponse;
 

@@ -13,13 +13,15 @@ public class MongoContext : IMongoContext
     public MongoContext(IOptions<MongoDbConfiguration> config)
     {
         _config = config.Value;
+        
+        string formattedConnectionString = _config.ConnectionString;
         _client = new MongoClient(_config.ConnectionString);
         _mongoDb = _client.GetDatabase(_config.Database);
     }
 
     
-    public IMongoCollection<TCollection> GetCollection<TCollection>() where TCollection : class
+    public IMongoCollection<TCollection> GetCollection<TCollection>(string collectionName) where TCollection : class
     {
-        return _mongoDb.GetCollection<TCollection>(nameof(TCollection));
+        return _mongoDb.GetCollection<TCollection>(collectionName);
     }
 }

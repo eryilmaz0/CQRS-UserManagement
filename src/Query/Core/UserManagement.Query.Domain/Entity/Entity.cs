@@ -6,7 +6,6 @@ namespace UserManagement.Query.Domain.Entity;
 public abstract class Entity<TPrimaryKey> : IEntity<TPrimaryKey>
 {
     [BsonId]
-    [BsonRepresentation(BsonType.ObjectId)]
     public TPrimaryKey Id { get; set; }
     public DateTime Created { get; set; }
 

@@ -5,5 +5,5 @@ namespace UserManager.Query.Persistence.Mongo;
 
 public interface IMongoContext
 {
-    public IMongoCollection<TCollection> GetCollection<TCollection>() where TCollection : class;
+    public IMongoCollection<TCollection> GetCollection<TCollection>(string collectionName) where TCollection : class;
 }

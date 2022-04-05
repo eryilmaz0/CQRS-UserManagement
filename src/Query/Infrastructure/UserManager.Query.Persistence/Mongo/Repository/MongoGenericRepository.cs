@@ -14,7 +14,7 @@ public class MongoGenericRepository<TEntity, TPrimaryKey> : IRepository<TEntity,
     public MongoGenericRepository(IMongoContext context)
     {
         _context = context;
-        _collection = _context.GetCollection<TEntity>();
+        _collection = _context.GetCollection<TEntity>(typeof(TEntity).Name);
     }
     
 

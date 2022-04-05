@@ -9,6 +9,5 @@ public class CreateUserRoleCommandValidator : AbstractValidator<CreateUserRoleCo
     {
         RuleFor(property => property.RoleName).NotEmpty().WithMessage("RoleName Can Not be Null or Empty.");
         RuleFor(property => property.RoleDescription).NotEmpty().WithMessage("RoleDescription Can Not be Null or Empty.");
-        RuleFor(property => property.IsDefault).NotEmpty().WithMessage("IsDefault Can Not be Null or Empty.");
     }
 }
