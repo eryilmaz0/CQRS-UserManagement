@@ -7,11 +7,15 @@ namespace UserManager.Query.Application.QueryCacheManager;
 public interface IQueryCacheManager
 {
     public Task SetCacheListedUsersAsync(ICollection<ListUsersViewModel> users);
-    public Task<ICollection<ListUsersViewModel>> ReadListedUsersFromCache();
+    public Task<ICollection<ListUsersViewModel>> ReadListedUsersFromCacheAsync();
+    public Task RemoveListedUsersFromCacheAsync();
     public Task SetCacheDetailedUserAsync(GetUserWithDetailViewModel user);
-    public Task<GetUserWithDetailViewModel> ReadDetailedUserFromCache(Guid userId);
+    public Task<GetUserWithDetailViewModel> ReadDetailedUserFromCacheAsync(Guid userId);
+    public Task RemoveDetailedUserFromCacheAsync(string userId);
     public Task SetCacheUserWithRoleAsync(GetUserWithRolesViewModel user);
-    public Task<GetUserWithRolesViewModel> ReadUserWithRoleFromCache(Guid userId);
+    public Task<GetUserWithRolesViewModel> ReadUserWithRoleFromCacheAsync(Guid userId);
+    public Task RemoveUserWithRoleFromCacheAsync(string userId);
     public Task SetCacheListedRolesAsync(ICollection<ListRolesViewModel> roles);
     public Task<ICollection<ListRolesViewModel>> ReadListedRolesFromCacheAsync();
+    public Task RemoveListedRolesFromCacheAsync();
 }

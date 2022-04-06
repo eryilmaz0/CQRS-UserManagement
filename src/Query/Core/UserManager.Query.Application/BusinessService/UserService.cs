@@ -23,7 +23,7 @@ public class UserService : IUserService
 
     public async Task<ListUsersQueryResponse> Handle(ListUsersQuery request, CancellationToken cancellationToken)
     {
-        var usersFromCache = await this._queryCacheManager.ReadListedUsersFromCache();
+        var usersFromCache = await this._queryCacheManager.ReadListedUsersFromCacheAsync();
 
         if (usersFromCache is not null)
             return new(true, "Users Listed From Cache.") { Users = usersFromCache };
@@ -38,7 +38,7 @@ public class UserService : IUserService
     
     public async Task<GetUserWithDetailQueryResponse> Handle(GetUserWithDetailQuery request, CancellationToken cancellationToken)
     {
-        var userFromCache = await this._queryCacheManager.ReadDetailedUserFromCache(request.UserId);
+        var userFromCache = await this._queryCacheManager.ReadDetailedUserFromCacheAsync(request.UserId);
 
         if (userFromCache is not null)
             return new(true, "User Fetched From Cache.") { User = userFromCache };
@@ -57,7 +57,7 @@ public class UserService : IUserService
 
     public async Task<GetUserWithRolesQueryResponse> Handle(GetUserWithRolesQuery request, CancellationToken cancellationToken)
     {
-        var userFromCache = await this._queryCacheManager.ReadUserWithRoleFromCache(request.UserId);
+        var userFromCache = await this._queryCacheManager.ReadUserWithRoleFromCacheAsync(request.UserId);
 
         if (userFromCache is not null)
             return new(true, "User Fetched From Cache.") { User = userFromCache };

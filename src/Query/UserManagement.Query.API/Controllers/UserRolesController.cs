@@ -20,9 +20,9 @@ public class UserRolesController : ControllerBase
 
 
    [HttpGet]
-   public async Task<IActionResult> ListRoles([FromBody] ListRolesQuery request)
+   public async Task<IActionResult> ListRoles()
    {
-      var result = await _mediator.SendAsync<ListRolesQuery, ListRolesQueryResponse>(request);
+      var result = await _mediator.SendAsync<ListRolesQuery, ListRolesQueryResponse>(new());
 
       if (!result.IsSuccess)
          return BadRequest(result);

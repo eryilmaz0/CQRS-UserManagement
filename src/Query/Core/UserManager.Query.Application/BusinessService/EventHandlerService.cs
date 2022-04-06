@@ -1,6 +1,7 @@
 ﻿using UserManagement.Common.IntegrationEvent;
 using UserManagement.Query.Domain.Entity;
 using UserManagement.Query.Domain.Enum;
+using UserManager.Query.Application.QueryCacheManager;
 using UserManager.Query.Application.Repository;
 
 namespace UserManager.Query.Application.BusinessService;
@@ -9,12 +10,14 @@ public class EventHandlerService : IEventHandleService
 {
     private readonly IUserRepository _userRepository;
     private readonly IUserRoleRepository _userRoleRepository;
+    private readonly IQueryCacheManager _queryCacheManager;
 
 
-    public EventHandlerService(IUserRepository userRepository, IUserRoleRepository userRoleRepository)
+    public EventHandlerService(IUserRepository userRepository, IUserRoleRepository userRoleRepository, IQueryCacheManager queryCacheManager)
     {
         _userRepository = userRepository;
         _userRoleRepository = userRoleRepository;
+        _queryCacheManager = queryCacheManager;
     }
     
 
@@ -51,6 +54,10 @@ public class EventHandlerService : IEventHandleService
         
         user.RoleIds.Add(@event.RoleId);
         await _userRepository.Update(user);
+
+        await _queryCacheManager.RemoveListedUsersFromCacheAsync();
+        await _queryCacheManager.RemoveDetailedUserFromCacheAsync(@event.UserId);
+        await _queryCacheManager.RemoveUserWithRoleFromCacheAsync(@event.UserId);
     }
     
 
@@ -63,6 +70,10 @@ public class EventHandlerService : IEventHandleService
 
         user.EmailConfirmed = true;
         await _userRepository.Update(user);
+        
+        await _queryCacheManager.RemoveListedUsersFromCacheAsync();
+        await _queryCacheManager.RemoveDetailedUserFromCacheAsync(@event.ConfirmedUserId);
+        await _queryCacheManager.RemoveUserWithRoleFromCacheAsync(@event.ConfirmedUserId);
     }
     
 
@@ -89,6 +100,8 @@ public class EventHandlerService : IEventHandleService
         user.RoleIds.Add(defaultRole.Id);
 
         await _userRepository.Insert(user);
+
+        await _queryCacheManager.RemoveListedUsersFromCacheAsync();
     }
     
 
@@ -100,6 +113,10 @@ public class EventHandlerService : IEventHandleService
             throw new ApplicationException("User Not Found.");
 
         await _userRepository.Delete(user);
+        
+        await _queryCacheManager.RemoveListedUsersFromCacheAsync();
+        await _queryCacheManager.RemoveDetailedUserFromCacheAsync(@event.RemovedUserId);
+        await _queryCacheManager.RemoveUserWithRoleFromCacheAsync(@event.RemovedUserId);
     }
     
 
@@ -120,6 +137,7 @@ public class EventHandlerService : IEventHandleService
         };
 
         await _userRoleRepository.Insert(role);
+        await _queryCacheManager.RemoveListedRolesFromCacheAsync();
     }
     
     
@@ -131,6 +149,7 @@ public class EventHandlerService : IEventHandleService
             throw new ApplicationException("User Role Not Found.");
 
         await _userRoleRepository.Delete(role);
+        await _queryCacheManager.RemoveListedRolesFromCacheAsync();
     }
     
 
@@ -146,6 +165,7 @@ public class EventHandlerService : IEventHandleService
         role.IsDefault = @event.IsDefault;
 
         await _userRoleRepository.Update(role);
+        await _queryCacheManager.RemoveListedRolesFromCacheAsync();
     }
     
 
@@ -162,6 +182,10 @@ public class EventHandlerService : IEventHandleService
         user.Age = @event.Age;
 
         await _userRepository.Update(user);
+        
+        await _queryCacheManager.RemoveListedUsersFromCacheAsync();
+        await _queryCacheManager.RemoveDetailedUserFromCacheAsync(@event.UserId);
+        await _queryCacheManager.RemoveUserWithRoleFromCacheAsync(@event.UserId);
     }
     
 }

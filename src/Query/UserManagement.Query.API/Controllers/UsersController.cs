@@ -30,9 +30,10 @@ public class UsersController : ControllerBase
 
 
    [HttpGet]
-   public async Task<IActionResult> GetUserWithDetail([FromBody] GetUserWithDetailQuery request)
+   [Route("{userId}")]
+   public async Task<IActionResult> GetUserWithDetail([FromRoute] Guid userId)
    {
-      var result = await _mediator.SendAsync<GetUserWithDetailQuery, GetUserWithDetailQueryResponse>(request);
+      var result = await _mediator.SendAsync<GetUserWithDetailQuery, GetUserWithDetailQueryResponse>(new(){UserId = userId});
 
       if (!result.IsSuccess)
          return BadRequest(result);
@@ -43,9 +44,10 @@ public class UsersController : ControllerBase
 
 
    [HttpGet]
-   public async Task<IActionResult> GetUserWithRoles([FromBody] GetUserWithRolesQuery request)
+   [Route("{userId}")]
+   public async Task<IActionResult> GetUserWithRoles([FromRoute] Guid userId)
    {
-      var result = await _mediator.SendAsync<GetUserWithRolesQuery, GetUserWithRolesQueryResponse>(request);
+      var result = await _mediator.SendAsync<GetUserWithRolesQuery, GetUserWithRolesQueryResponse>(new(){UserId = userId});
 
       if (!result.IsSuccess)
          return BadRequest(result);

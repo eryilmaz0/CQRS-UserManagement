@@ -16,12 +16,22 @@ public class QueryCacheManager : IQueryCacheManager
 
 
     public async Task SetCacheListedUsersAsync(ICollection<ListUsersViewModel> users) =>  await this._cache.SetToCacheAsync("ListedUsers", users.ToList());
+    public async Task RemoveListedUsersFromCacheAsync() => await this._cache.RemoveFromCacheAsync("ListedUsers");
+    
+
     public async Task SetCacheDetailedUserAsync(GetUserWithDetailViewModel user) => await this._cache.SetToCacheAsync($"DetailedUser_{user.Id}", user);
+    public async Task RemoveDetailedUserFromCacheAsync(string userId) => await this._cache.RemoveFromCacheAsync($"DetailedUser_{userId}");
+    
+
     public async Task SetCacheUserWithRoleAsync(GetUserWithRolesViewModel user) => await this._cache.SetToCacheAsync($"UserWithRole_{user.Id}", user);
+    public async Task RemoveUserWithRoleFromCacheAsync(string userId) => await this._cache.RemoveFromCacheAsync($"UserWithRole_{userId}");
+    
+
     public async Task SetCacheListedRolesAsync(ICollection<ListRolesViewModel> roles) => await this._cache.SetToCacheAsync("ListedRoles", roles.ToList());
+    public async Task RemoveListedRolesFromCacheAsync() => await this._cache.RemoveFromCacheAsync("ListedRoles");
+   
     
-    
-    public async Task<ICollection<ListUsersViewModel>> ReadListedUsersFromCache()
+    public async Task<ICollection<ListUsersViewModel>> ReadListedUsersFromCacheAsync()
     {
         ICollection<ListUsersViewModel> listedUsers = null;
 
@@ -33,7 +43,7 @@ public class QueryCacheManager : IQueryCacheManager
         return listedUsers;
     }
 
-    public async Task<GetUserWithDetailViewModel> ReadDetailedUserFromCache(Guid userId)
+    public async Task<GetUserWithDetailViewModel> ReadDetailedUserFromCacheAsync(Guid userId)
     {
         GetUserWithDetailViewModel detailedUser = null;
 
@@ -44,7 +54,7 @@ public class QueryCacheManager : IQueryCacheManager
         return detailedUser;
     }
     
-    public async Task<GetUserWithRolesViewModel> ReadUserWithRoleFromCache(Guid userId)
+    public async Task<GetUserWithRolesViewModel> ReadUserWithRoleFromCacheAsync(Guid userId)
     {
         GetUserWithRolesViewModel userWithRole = null;
 
@@ -67,4 +77,6 @@ public class QueryCacheManager : IQueryCacheManager
 
         return listedRoles;
     }
+
+    
 }

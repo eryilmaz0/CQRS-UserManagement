@@ -19,12 +19,13 @@ public class AddressesController : ControllerBase
 
 
     [HttpGet]
-    public async Task<IActionResult> GetUserAddress([FromBody] GetUserAddressQuery request)
+    [Route("{userId}")]
+    public async Task<IActionResult> GetUserAddress([FromRoute] Guid userId)
     {
-        var result = await _mediator.SendAsync<GetUserAddressQuery, GetUserAddressQueryResponse>(request);
+        var result = await _mediator.SendAsync<GetUserAddressQuery, GetUserAddressQueryResponse>(new(){UserId = userId});
 
         if (!result.IsSuccess)
-            return BadRequest(request);
+            return BadRequest(result);
 
         return Ok(result);
     }
