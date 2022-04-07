@@ -80,5 +80,4 @@ public class RedisCacheManager : ICacheManager
     {
         return await this._database.KeyExistsAsync(key);
     }
-    
 }
